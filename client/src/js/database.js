@@ -43,4 +43,5 @@ const result = await request;
 return result?.value;
 
 };
+
 initdb();

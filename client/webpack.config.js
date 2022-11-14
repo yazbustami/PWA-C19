@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
-const { isBooleanObject } = require('util/types');
+// const { isBooleanObject } = require('util/types');
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -35,8 +35,8 @@ module.exports = () => {
         description: 'Text editor that will help make things easier',
         background_color: '#ee8294',
         theme_color: '#ee8294',
-        start_url:'./',
-        publichPath:'./',
+        start_url:'/',
+        publichPath:'/',
 
         icons: [{
           src: path.resolve('src/images/logo.png'),
